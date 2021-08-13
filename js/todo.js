@@ -26,11 +26,12 @@ function paintTodo(newTodo){
     addspan.innerText = newTodo.text;
     
     const btn = document.createElement("button");
-    btn.innerText = "X";
+    btn.innerText = "❌";
     
+
     btn.addEventListener("click",deleteTodo);
-    addli.appendChild(addspan);
     addli.appendChild(btn);
+    addli.appendChild(addspan);
     todoList.appendChild(addli);
 }
 
